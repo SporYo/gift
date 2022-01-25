@@ -1,0 +1,70 @@
+@import "vars"
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+html, body
+	height: 100%
+	width: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	opacity: 1
+    min-height: 100vh
+    scroll-behavior: smooth
+    text-rendering: optimizeSpeed
+    line-height: 1.5
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd
+	margin: 0
+	font-weight: 400
+
+input,
+button,
+textarea,
+select
+	font: inherit
+
+// При фокусе на input пропадает placeholder
+input::-webkit-input-placeholder 
+    opacity: 1
+    transition: opacity 0.3s ease
+input::-moz-placeholder 
+    opacity: 1
+    transition: opacity 0.3s ease
+input:-moz-placeholder 
+    opacity: 1
+    transition: opacity 0.3s ease
+input:-ms-input-placeholder 
+    opacity: 1
+    transition: opacity 0.3s ease
+input:focus::-webkit-input-placeholder 
+    opacity: 0
+    transition: opacity 0.3s ease
+input:focus::-moz-placeholder 
+    opacity: 0
+    transition: opacity 0.3s ease
+input:focus:-moz-placeholder 
+    opacity: 0
+    transition: opacity 0.3s ease
+input:focus:-ms-input-placeholder 
+    opacity: 0
+    transition: opacity 0.3s ease
+
